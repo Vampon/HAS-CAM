@@ -1,0 +1,12 @@
+_BASE_: ../Base-SBS.yml
+
+MODEL:
+  BACKBONE:
+    WITH_IBN: True
+  WEIGHTS: fastreid/model/duke_sbs_R50-ibn.pth
+
+DATASETS:
+  NAMES: ("DukeMTMC",)
+  TESTS: ("DukeMTMC",)
+
+OUTPUT_DIR: logs/dukemtmc/sbs_R50-ibn
